@@ -24,27 +24,22 @@
 
 /*...................NAVIGATION.....................*/
 nav {
-  margin-inline: 2.7%;
-  margin-block-start: 15px;
-  width: 94.4%;
+  margin-inline: 42px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--close-white);
+  align-items: center;
+  padding-block: 30px;
+  border-bottom: 2px solid var(--close-white);
 }
 
 /*....LOGO.....*/
 .logo {
-  float: left;
-  height: 90px;
-  width: 170px;
-  padding-inline-start: -2px;
-  padding-block-start: 1px;
-  padding-block-end: 32px;
+  overflow: clip;
 }
 
 .nav-list {
   list-style: none;
-  padding-block-end: 33px;
+  padding-block-end: 15px;
   padding-inline-start: 200px;
 }
 .nav-list li {
@@ -77,57 +72,70 @@ nav {
 /*..................NAVIGATION.....................*/
 
 /*................CONTAINER........................*/
-section {
-  margin-block-start: 85px;
-  margin-inline-start: 18.2%;
-  margin-inline-end: 19.86%;
-  margin-block-end: 139px;
-  position: relative;
+.section {
+  display: flex;
+  justify-content: center;
 }
+
 .container {
   display: flex;
-  box-shadow: 0px 5px 15px 0px #0000000d;
-
-  box-shadow: 0px 15px 35px 0px #2b404e18;
+  height: 795px;
+  width: 892px;
+  margin-top: 50px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
 }
-.detail {
-  padding: 49px;
+.left-section {
+  background-color: white;
   width: 580px;
+  height: auto;
+  padding-left: 48px;
+  position: relative;
 }
-
-.checkout {
-  margin-inline-start: -49px;
-  color: var(--navy-blue);
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0px;
-  text-align: left;
-  width: 579px;
-  height: 70px;
+.border-div1 {
+  background-color: rgb(235, 235, 235);
+  left: 0;
+  right: 0;
+  height: 1px;
+  border: none;
+  top: 95.4px;
   position: absolute;
-  padding-block-start: 0px;
-  padding-block-end: 0px;
-  top: 48px;
-  left: 50px;
-  z-index: 1;
-  padding-inline-start: 49px;
-  border-bottom: 2px solid var(--close-white);
+  z-index: 2;
 }
-
+.border-div2 {
+  background-color: rgb(235, 235, 235);
+  left: 0;
+  right: 0;
+  height: 1px;
+  border: none;
+  top: 348px;
+  position: absolute;
+  z-index: 2;
+}
+.border-div3 {
+  background-color: rgb(235, 235, 235);
+  left: 0;
+  right: 0;
+  height: 1px;
+  border: none;
+  top: 545px;
+  position: absolute;
+  z-index: 2;
+}
+.checkout {
+  padding-top: 41px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgb(29, 44, 60);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /*................PERSONAL INFORMATION................*/
 .personal-info {
-  margin-inline-start: -49px;
-  width: 579px;
-  height: 221px;
-  position: absolute;
-  padding-block-start: 1px;
-  padding-block-end: 10px;
-  top: 152px;
-  left: 50px;
-  z-index: 1;
-  padding-inline-start: 49px;
-  border-bottom: 2px solid var(--close-white);
+  width: auto;
+  height: auto;
+  padding-top: 36px;
+  padding-bottom: 41px;
 }
 .info-heading {
   display: flex;
@@ -196,17 +204,8 @@ form input {
 
 /*.................PAYMENT INFORMATION.............*/
 .payment-info {
-  margin-inline-start: -49px;
-  width: 579px;
-  height: 154px;
-  position: absolute;
-  padding-block-start: 1px;
-  padding-block-end: 10px;
-  top: 412px;
-  left: 50px;
-  z-index: 1;
-  padding-inline-start: 49px;
-  border-bottom: 2px solid var(--close-white);
+  padding-top: 41px;
+  padding-bottom: 41px;
 }
 .card-number input {
   display: block;
@@ -221,17 +220,17 @@ form input {
   position: absolute;
   width: 5px;
   height: 17px;
-  left: 380px;
-  top: 64px;
-  z-index: 1;
+  left: 325px;
+  top: 453px;
+  z-index: 3;
   padding-inline-end: 0px;
 }
 .cvv {
   position: absolute;
   width: 5px;
   height: 17px;
-  left: 465px;
-  top: 64px;
+  left: 460px;
+  top: 453px;
   z-index: 1;
   padding-inline-end: 0px;
 }
@@ -244,7 +243,7 @@ input[name="cvv"] {
 /*..................PAYMENT INORMATION.........*/
 
 .Buy {
-  margin-block-start: 556.5px;
+  padding-top: 23px;
 }
 button {
   background-color: var(--turquoise-green);
@@ -267,7 +266,7 @@ button {
   width: 333px;
   height: 20px;
   margin-inline: 75px;
-  margin-block-start: 23px;
+  margin-block-start: 10px;
   margin-block-end: 35px;
 }
 .support p {
@@ -292,11 +291,14 @@ button {
   border-radius: 2px;
   width: 92px;
 }
-.client {
-  width: 312px;
-  padding: 43px;
+/*..................PAYMENT INORMATION.........*/
 
-  background-color: var(--blue);
+.right-section {
+  background-color: rgb(17, 121, 191);
+  width: 312px;
+  height: auto;
+  padding-left: 46px;
+  padding-top: 42px;
   color: var(--white);
 }
 
@@ -472,20 +474,13 @@ button {
 
 /*..................FOOTER................*/
 footer {
-  margin-block-start: 33px;
-  display: flex;
-  gap: 2px;
-  margin-inline-start: 287px;
-  text-align: center;
-  font-size: 10px;
-  box-shadow: 0px 5px 15px 0px #0000000d;
-  color: var(--grey);
-  box-shadow: 0px 15px 35px 0px #2b404e18;
-  font-family: Lato;
+  font-family: lato, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: rgba(99, 107, 111, 1);
+  padding-top: 33px;
+  margin-block-end: 50px;
 }
 /*.....................FOOTER.............*/

@@ -14,7 +14,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
+
       <nav>
         <img src="wppusher-logo copy.svg" alt="Logo" class="logo" />
         
@@ -27,112 +27,109 @@
           </ul>
       
       </nav>
-      <section>
-        <div class="checkout">Checkout</div>
-        <div class="personal-info">
-          <div class="info-heading">
-            <span class="digit">1</span>
-            <h3 class="basic-info">Your Basic Information</h3>
+      <div class="section">
+        <div class="container"> 
+        <div class="left-section">
+          <div class="border-div1"></div>
+          <div class="border-div2"></div>
+          <div class="border-div3"></div>
+          <div class="checkout">Checkout</div>
+          <div class="personal-info">
+            <div class="info-heading">
+              <span class="digit">1</span>
+              <h3 class="basic-info">Your Basic Information</h3>
+            </div>
+            <form action="#">
+              <div class="name">
+                <div class="first-Name group">
+                  <label for="fname">First Name</label> </br>
+                  <input type="text" id="fname" name="fname" placeholder="Abdul-Quadri" required />
+                </div>
+                <div class="second-Name group">
+                  <label for="lname">Last Name</label> </br>
+                  <input type="text" id="lname" name="lname" placeholder="Lamina" required />
+                </div>
+              </div>
+              <div class="email">
+                <label for="email">E-mail</label> </br>
+                  <input type="email" id="email" name="email" placeholder="oladipupolamina@gmail.com" required />
+              </div>
+            </form>
           </div>
-          <form action="#">
-            <div class="name">
-              <div class="first-Name group">
-                <label for="fname">First Name</label> </br>
-                <input type="text" id="fname" name="fname" placeholder="Abdul-Quadri" required />
+          <div class="payment-info">
+            <div class="info-heading">
+              <span class="digit">2</span>
+              <h3 class="pay-info">Your Payment Information</h3>
+            </div>
+            <form action="#">
+              <div class="card-number">
+                <label for="cnum">Credit card</label>
+                <input type="text" id="cnum" name="cnum" placeholder="Card Number" required>
+  
+                <label for="month"></label>
+                <input type="num" id="month" name="month" placeholder="MM/YY"  class="month" maxlength="5">
+                
+  
+                <label for="cvv"></label>
+                <input type="num" id="cvv" name="cvv" placeholder="CVV" required class="cvv" maxlength="3">
               </div>
-              <div class="second-Name group">
-                <label for="lname">Last Name</label> </br>
-                <input type="text" id="lname" name="lname" placeholder="Lamina" required />
-              </div>
+            </form>
+           </div>
+           <div class="Buy">
+            <button>Buy WP Pusher</button>
+            <div class="support">
+              <span>&#x3f;</span>
+              <p><b>Need any help?</b> Don’t hesitate to <a href="#" class="contact">contact support!</a></p>
             </div>
-            <div class="email">
-              <label for="email">E-mail</label> </br>
-                <input type="email" id="email" name="email" placeholder="oladipupolamina@gmail.com" required />
-            </div>
-          </form>
-        </div>
-        <div class="payment-info">
-          <div class="info-heading">
-            <span class="digit">2</span>
-            <h3 class="pay-info">Your Payment Information</h3>
-          </div>
-          <form action="#">
-            <div class="card-number">
-              <label for="cnum">Credit card</label>
-              <input type="text" id="cnum" name="cnum" placeholder="Card Number" required>
-
-              <label for="month"></label>
-              <input type="num" id="month" name="month" placeholder="MM/YY"  class="month" maxlength="5">
-              
-
-              <label for="cvv"></label>
-              <input type="num" id="cvv" name="cvv" placeholder="CVV" required class="cvv" maxlength="3">
-            </div>
-          </form>
-         </div>
-        <div class="container">
-        <div class="detail">
-         
-           
-            
-             <div class="Buy">
-              <button>Buy WP Pusher</button>
-              <div class="support">
-                <span>&#x3f;</span>
-                <p><b>Need any help?</b> Don’t hesitate to <a href="#" class="contact">contact support!</a></p>
-              </div>
-              <img src="powered_by_stripe.svg" alt="stripe-logo " class="stripe">
-            </div>
-            </div>
-            
-        
-          <div class="client">
-            <div class="freelancer">
-              <h3>Freelancer</h3>
-              <div>
-                <span class="dollar">$</span>
-               <div class="currency">
-                 <p class="money">99</p>
-                 <span class="stroke">&#x2f;</span>
-                <span class="year">year</span>
-               </div>
-              </div>
-              <p class="renewal">Automatically renews after 1 year</p>
-            </div>
-            <div class="functions">
-              <div>
-                <img src="checkmark.png" alt="Check-mark">
-                <p class="site">Use on 5 client sites</p>
-              </div>
-              <div>
-                <img src="checkmark.png" alt="Check-mark">
-                <p class="site" >Private repositries</p>
-              </div>
-              <div>
-                <img src="checkmark.png" alt="Check-mark">
-                <p class="site">Email support</p>
-              </div>
-            </div>
-            <div class="switch-plan">
-              <p class="p-first para">Need <span>20</span> client sites ?</p>
-              <p class="p-second para">Switch to the <span>Agency </span> plan</p>
-            </div>
-            <div class="testimonial">
-              <p class="pusher">FTP is horrible to deal with <span>WP Pusher</span> solves that issue, and the customer support is awesome!</p>
-              <div>
-                <img src="Bitmap.svg" alt="Pic" class="bit-map">
-                <p class="kirk">Lamina Abdul-Quadri</p>
-              </div>
-            </div>
+            <img src="powered_by_stripe.svg" alt="stripe-logo " class="stripe">
           </div>
         </div>
-          <footer>
-            <span>&#169;</span>
-            <p>2018 WP Pusher IVS <span style="color:#31708f; padding-left: 7px;">&#x22C5; Terms of Service</span></p>
-          </footer>
-        </section>
+        <div class="right-section">
+          <div class="freelancer">
+            <h3>Freelancer</h3>
+            <div>
+              <span class="dollar">$</span>
+             <div class="currency">
+               <p class="money">99</p>
+               <span class="stroke">&#x2f;</span>
+              <span class="year">year</span>
+             </div>
+            </div>
+            <p class="renewal">Automatically renews after 1 year</p>
+          </div>
+          <div class="functions">
+            <div>
+              <img src="checkmark.png" alt="Check-mark">
+              <p class="site">Use on 5 client sites</p>
+            </div>
+            <div>
+              <img src="checkmark.png" alt="Check-mark">
+              <p class="site" >Private repositries</p>
+            </div>
+            <div>
+              <img src="checkmark.png" alt="Check-mark">
+              <p class="site">Email support</p>
+            </div>
+          </div>
+          <div class="switch-plan">
+            <p class="p-first para">Need <span>20</span> client sites ?</p>
+            <p class="p-second para">Switch to the <span>Agency </span> plan</p>
+          </div>
+          <div class="testimonial">
+            <p class="pusher">FTP is horrible to deal with <span>WP Pusher</span> solves that issue, and the customer support is awesome!</p>
+            <div>
+              <img src="Bitmap.svg" alt="Pic" class="bit-map">
+              <p class="kirk">Lamina Abdul-Quadri</p>
+            </div>
+          </div>
+        </div> 
+      </div> 
+        </div>
         
-      </div>
-    
+     
+      <footer>
+        <span>&#169;</span>
+        <p>2018 WP Pusher IVS <span style="color:#31708f; padding-left: 7px;">&#x22C5; Terms of Service</span></p>
+      </footer>
   </body>
 </html>
